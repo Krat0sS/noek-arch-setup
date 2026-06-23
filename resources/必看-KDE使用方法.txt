@@ -1,0 +1,36 @@
+# Noek Arch Setup - KDE Plasma 使用指南
+
+## 基础操作
+
+### 快捷键
+- `Alt + F1` — 打开应用菜单
+- `Alt + F2` — 打开运行对话框
+- `Ctrl + Alt + T` — 打开终端
+- `Super + L` — 锁屏
+- `Print Screen` — 截图
+
+### 系统设置
+- 系统设置: `systemsettings`
+- 显示设置: `kscreen-doctor`
+- 声音设置: `pavucontrol`
+
+## 配置文件位置
+
+- KDE 配置: `~/.config/plasma-workspace/`
+- 终端配置: `~/.config/konsolerc`
+
+## 常用命令
+
+```bash
+# 更新系统
+sudo pacman -Syu
+
+# 安装软件
+yay -S <package>
+
+# 查看系统信息
+fastfetch
+
+# 重启 Plasma
+killall plasmashell && kstart5 plasmashell
+```

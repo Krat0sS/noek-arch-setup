@@ -1,0 +1,68 @@
+# Noek Arch Setup - Niri + DMS 使用指南
+
+## 快捷键
+
+### 基础操作
+- `Super + Enter` — 打开终端 (kitty)
+- `Super + Q` — 关闭窗口
+- `Super + Shift + Q` — 强制关闭窗口
+- `Super + D` — 打开启动器 (fuzzel)
+- `Super + Shift + E` — 退出 Niri
+
+### 窗口管理
+- `Super + 方向键` — 切换焦点
+- `Super + Shift + 方向键` — 移动窗口
+- `Super + H/J/K/L` — 切换焦点 (Vim风格)
+- `Super + 1-9` — 切换到工作区 1-9
+- `Super + Shift + 1-9` — 移动窗口到工作区 1-9
+
+### 截图
+- `Print Screen` — 全屏截图
+- `Super + Print Screen` — 区域截图
+- `Shift + Print Screen` — 窗口截图
+
+### 媒体控制
+- `XF86AudioRaiseVolume` — 增加音量
+- `XF86AudioLowerVolume` — 降低音量
+- `XF86AudioMute` — 静音
+
+## 配置文件位置
+
+- Niri 配置: `~/.config/niri/config.kdl`
+- DMS 配置: `~/.config/niri/dms/`
+- Kitty 配置: `~/.config/kitty/kitty.conf`
+- Fish 配置: `~/.config/fish/config.fish`
+- Starship 配置: `~/.config/starship.toml`
+
+## 常用命令
+
+```bash
+# 更新系统
+sudo pacman -Syu
+
+# 安装软件
+yay -S <package>
+
+# 查看系统信息
+fastfetch
+
+# 文件管理
+yazi
+
+# 系统监控
+btop
+```
+
+## 故障排除
+
+### Niri 无法启动
+1. 检查配置文件语法: `niri validate`
+2. 查看日志: `journalctl -b -u niri`
+
+### 音频问题
+1. 检查 PipeWire 状态: `systemctl --user status pipewire`
+2. 重启音频服务: `systemctl --user restart pipewire wireplumber`
+
+### 输入法问题
+1. 检查 Fcitx5 状态: `systemctl --user status fcitx5`
+2. 重启输入法: `fcitx5 -r`

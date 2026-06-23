@@ -1,0 +1,35 @@
+# --- Standard Packages ---
+# Browser
+firefox                                  # Web browser
+# Editor
+neovim                                   # Advanced text editor
+# TUI Tools
+yazi                                     # TUI file manager
+btop                                     # System monitor
+gdu                                      # Disk usage analyzer
+fastfetch                                # System info
+lazygit                                  # TUI git client
+# Shell
+starship                                 # Shell prompt
+eza                                      # Modern ls
+bat                                      # Cat with syntax highlighting
+zoxide                                   # Smart cd
+fzf                                      # Fuzzy finder
+# Media
+mpv                                      # Video player
+obs-studio                               # Streaming/recording
+imv                                      # Image viewer
+# Audio
+pavucontrol                              # Audio control GUI
+easyeffects                              # Audio effects
+# System
+gparted                                  # Disk management
+nm-connection-editor                     # Network editor
+btrfs-assistant                          # Btrfs snapshot manager
+# --- AUR Packages ---
+AUR:visual-studio-code-bin               # VS Code
+AUR:google-chrome                        # Chrome browser
+AUR:spotify                              # Spotify
+AUR:localsend                            # File sharing
+AUR:lazyvim                               # Neovim config
+# --- Flatpak Packages ---

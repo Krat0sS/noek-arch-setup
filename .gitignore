@@ -1,0 +1,16 @@
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# OMO (AI agent files)
+.omo/
+
+# Logs
+*.log
+
+# Temp
+/tmp/

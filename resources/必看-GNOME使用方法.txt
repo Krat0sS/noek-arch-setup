@@ -1,0 +1,38 @@
+# Noek Arch Setup - GNOME 使用指南
+
+## 基础操作
+
+### 快捷键
+- `Super` — 打开活动概览
+- `Super + A` — 打开应用列表
+- `Super + 方向键` — 切换工作区
+- `Ctrl + Alt + T` — 打开终端
+- `Print Screen` — 截图
+
+### 扩展管理
+- 安装扩展管理器: `gnome-extensions-app`
+- 或使用浏览器: https://extensions.gnome.org
+
+## 配置文件位置
+
+- GNOME 配置: `~/.config/dconf/`
+- 扩展配置: `~/.local/share/gnome-shell/extensions/`
+
+## 常用命令
+
+```bash
+# 更新系统
+sudo pacman -Syu
+
+# 安装软件
+yay -S <package>
+
+# 查看系统信息
+fastfetch
+
+# 重启 GNOME Shell (X11)
+killall -3 gnome-shell
+
+# 查看已安装扩展
+gnome-extensions list
+```
